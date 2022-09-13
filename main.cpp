@@ -32,7 +32,7 @@ extern "C" NTSTATUS DriverEntry(PDRIVER_OBJECT DriverObject,PUNICODE_STRING RegP
 
 
 
-	return (g_Etwhook.init() && g_Etwhook.start()) ? STATUS_SUCCESS : STATUS_UNSUCCESSFUL;
+	return STATUS_SUCCESS;
 }
 
 void Unload(PDRIVER_OBJECT DriverObject) {
@@ -42,13 +42,13 @@ void Unload(PDRIVER_OBJECT DriverObject) {
 	//stop
 	g_Etwhook.stop();
 
-	KdPrint(("¡¾EtwHook¡¿:DriverUnload Successly\n"));
+	KdPrint(("ï¿½ï¿½EtwHookï¿½ï¿½:DriverUnload Successly\n"));
 }
 
 NTSTATUS ShowErrInfo(const char* szStr)
 {
 
-	KdPrint(("¡¾EtwHook¡¿:%s\n", szStr));
+	KdPrint(("ï¿½ï¿½EtwHookï¿½ï¿½:%s\n", szStr));
 	return STATUS_UNSUCCESSFUL;
 }
 
