@@ -1,0 +1,12 @@
+﻿  Building 'InfinityHook' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Global.cpp
+  hde64.cpp
+  hook.cpp
+  main.cpp
+  正在生成代码...
+  InfinityHook.vcxproj -> C:\Users\Administrator\source\repos\自写项目\x64\Debug\InfinityHook.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Users\Administrator\source\repos\\x64\Debug\InfinityHook.sys
+  
+  Inf2Cat task was skipped as there were no inf files to process
+  
